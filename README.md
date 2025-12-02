@@ -25,8 +25,10 @@ A web-based English learning platform designed to help users improve grammar, vo
 ## 👥 Team & Task Division
 ## Member -- Role
  **Mehrin_221-15-5554** 
- - Frontend development (UI/UX, responsive design, JS interactions) |
+ - Frontend development (UI/UX, responsive design, JS interactions) 
  **Mim_** 
- - Backend development (Laravel, PHP, database, API routing) |
- **Raisa_** | AI content integration (grammar, vocabulary, language processing) |
- **Audity_** AI speech & conversation modules (voice features, chatbot integration) |
+ - Backend development (Laravel, PHP, database, API routing) 
+ **Raisa_** 
+ - AI content integration (grammar, vocabulary, language processing) 
+ **Audity_** 
+ - AI speech & conversation modules (voice features, chatbot integration) 
