@@ -1,4 +1,3 @@
-
 // get all id
 
 const navBar = document.getElementById('navBar');
