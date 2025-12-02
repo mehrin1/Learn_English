@@ -27,11 +27,11 @@ A web-based English learning platform designed to help users improve grammar, vo
  **Mehrin_221-15-5554** 
  - Frontend development (UI/UX, responsive design, JS interactions)
 
- **Mim_221-15-** 
+ **Mim_221-15-4965** 
  - Backend development (Laravel, PHP, database, API routing) 
 
- **Raisa_** 
+ **Raisa_1024** 
  - AI content integration (grammar, vocabulary, language processing) 
- 
- **Audity_** 
+
+ **Audity_1038** 
  - AI speech & conversation modules (voice features, chatbot integration) 
