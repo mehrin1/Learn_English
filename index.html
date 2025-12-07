@@ -49,7 +49,7 @@
                         class="menu menu-sm dropdown-content bg-base-100 flex flex-col justify-center items-center rounded-box right-3 mt-3 w-60 p-2 bg-gray-400">
                         <li>
                             <a>
-                                <button class="btn bg-white border-[#422AD5] flex justify-center items-center px-5">
+                                <button id="faqBtnMobile" class="btn bg-white border-[#422AD5] flex justify-center items-center px-5">
                                     <img src="assets/fa-circle-question.png" alt="">
                                     <span class="text-[#422AD5]">FAQ</span>
                                 </button>
@@ -57,9 +57,25 @@
                         </li>
                         <li>
                             <a>
-                                <button class="btn bg-white border-[#422AD5] flex justify-center items-center px-5">
+                                <button id="learnBtnMobile" class="btn bg-white border-[#422AD5] flex justify-center items-center px-5">
                                     <img src="assets/fa-book-open.png" alt="">
                                     <span class="text-[#422AD5]">Learn</span>
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <button id="learningPathBtnMobile" class="btn bg-white border-[#422AD5] flex justify-center items-center px-5">
+                                    <img src="assets/fa-book-open.png" alt="">
+                                    <span class="text-[#422AD5]">Learning Path</span>
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <button id="practiceBtnMobile" class="btn bg-white border-[#422AD5] flex justify-center items-center px-5">
+                                    <img src="assets/fa-book-open.png" alt="">
+                                    <span class="text-[#422AD5]">Practice</span>
                                 </button>
                             </a>
                         </li>
@@ -86,6 +102,16 @@
                     <button id="learnBtn" class="btn bg-white border-[#422AD5] text-[#422AD5] flex justify-center items-center px-5 hover:bg-[#422AD5] hover:text-white">
                         <i class="fa-solid fa-book-open"></i>
                         Learn
+                        
+                    </button>
+                    <button id="learningPathBtn" class="btn bg-white border-[#422AD5] text-[#422AD5] flex justify-center items-center px-5 hover:bg-[#422AD5] hover:text-white">
+                        <i class="fa-solid fa-route"></i>
+                        Learning Path
+                        
+                    </button>
+                    <button id="practiceBtn" class="btn bg-white border-[#422AD5] text-[#422AD5] flex justify-center items-center px-5 hover:bg-[#422AD5] hover:text-white">
+                        <i class="fa-solid fa-stopwatch"></i>
+                        Practice
                         
                     </button>
                     <button id="logOutBtn" class="btn bg-white border-[#422AD5] text-[#422AD5] flex justify-center items-center px-5 hover:bg-[#422AD5] hover:text-white">
@@ -277,6 +303,15 @@
                             <h3 class="text-xl font-semibold">Start With Assessment</h3>
                         </div>
                         <p class="text-sm mt-3">Set a baseline by checking your current vocabulary comfort level, so each lesson feels just right.</p>
+                        <div class="flex flex-wrap gap-2 mt-3">
+                            <span class="badge badge-outline">5 min check</span>
+                            <span class="badge badge-outline">Adaptive</span>
+                        </div>
+                        <ul class="list-disc list-inside text-xs text-gray-600 mt-3 space-y-1">
+                            <li>Quick level suggestion after login</li>
+                            <li>Recommended first three lessons highlighted</li>
+                        </ul>
+                        <button class="btn btn-sm mt-3 bg-white border-[#422AD5] text-[#422AD5] hover:bg-[#422AD5] hover:text-white">Start now</button>
                     </div>
                 </div>
                 <div class="card bg-[#F8F8F8] shadow-sm p-6">
@@ -286,6 +321,15 @@
                             <h3 class="text-xl font-semibold">Practice With Focus</h3>
                         </div>
                         <p class="text-sm mt-3">Use curated lesson packs and quick drills to reinforce pronunciation, meaning, and context.</p>
+                        <div class="flex flex-wrap gap-2 mt-3">
+                            <span class="badge badge-outline">Pronunciation</span>
+                            <span class="badge badge-outline">Context</span>
+                        </div>
+                        <ul class="list-disc list-inside text-xs text-gray-600 mt-3 space-y-1">
+                            <li>Info buttons open examples and synonyms</li>
+                            <li>Mark tricky words to revisit later</li>
+                        </ul>
+                        <button class="btn btn-sm mt-3 bg-[#422AD5] text-white border-none hover:bg-[#3a21c5]">Open a lesson</button>
                     </div>
                 </div>
                 <div class="card bg-[#F8F8F8] shadow-sm p-6">
@@ -295,6 +339,15 @@
                             <h3 class="text-xl font-semibold">Track Your Wins</h3>
                         </div>
                         <p class="text-sm mt-3">Keep an eye on streaks, completed lessons, and favorite words to stay motivated every day.</p>
+                        <div class="flex flex-wrap gap-2 mt-3">
+                            <span class="badge badge-outline">Streaks</span>
+                            <span class="badge badge-outline">Favorites</span>
+                        </div>
+                        <ul class="list-disc list-inside text-xs text-gray-600 mt-3 space-y-1">
+                            <li>Completed lessons highlighted in the grid</li>
+                            <li>Save modal words to a favorites list</li>
+                        </ul>
+                        <button class="btn btn-sm mt-3 bg-white border-[#422AD5] text-[#422AD5] hover:bg-[#422AD5] hover:text-white">View progress</button>
                     </div>
                 </div>
             </div>
@@ -315,6 +368,8 @@
                     <div class="stat-title text-gray-500">Listening Drills</div>
                     <div class="stat-value text-[#422AD5]">15+</div>
                     <div class="stat-desc">Daily pronunciation boosts</div>
+                    <div class="text-xs text-gray-600 mt-2">Use the speaker buttons on cards to preview sounds when enabled.</div>
+                    <button class="btn btn-xs mt-2 bg-white border-[#422AD5] text-[#422AD5] hover:bg-[#422AD5] hover:text-white">Try a drill</button>
                 </div>
                 <div class="stat bg-[#F8F8F8] shadow-sm rounded-lg">
                     <div class="stat-figure text-secondary">
@@ -323,6 +378,8 @@
                     <div class="stat-title text-gray-500">Writing Prompts</div>
                     <div class="stat-value text-[#422AD5]">25</div>
                     <div class="stat-desc">Context-first practice cards</div>
+                    <div class="text-xs text-gray-600 mt-2">Use meaning and pronunciation cues to craft a sentence per word.</div>
+                    <button class="btn btn-xs mt-2 bg-[#422AD5] text-white border-none hover:bg-[#3a21c5]">Start a prompt</button>
                 </div>
                 <div class="stat bg-[#F8F8F8] shadow-sm rounded-lg">
                     <div class="stat-figure text-secondary">
@@ -331,6 +388,8 @@
                     <div class="stat-title text-gray-500">Mini Quizzes</div>
                     <div class="stat-value text-[#422AD5]">5 min</div>
                     <div class="stat-desc">Quick checks after lessons</div>
+                    <div class="text-xs text-gray-600 mt-2">Pick a lesson, review cards, then run a quick recall check.</div>
+                    <button class="btn btn-xs mt-2 bg-white border-[#422AD5] text-[#422AD5] hover:bg-[#422AD5] hover:text-white">Begin quiz</button>
                 </div>
                 <div class="stat bg-[#F8F8F8] shadow-sm rounded-lg">
                     <div class="stat-figure text-secondary">
@@ -339,6 +398,8 @@
                     <div class="stat-title text-gray-500">Favorites</div>
                     <div class="stat-value text-[#422AD5]">50+</div>
                     <div class="stat-desc">Save words to revisit anytime</div>
+                    <div class="text-xs text-gray-600 mt-2">Tag tough words in the modal to keep them handy for review.</div>
+                    <button class="btn btn-xs mt-2 bg-[#422AD5] text-white border-none hover:bg-[#3a21c5]">See saved</button>
                 </div>
             </div>
         </section>

@@ -52,17 +52,25 @@ logOutBtn.addEventListener('click', (event) => {
     password.value = "";
 });
 
-// smooth scroll for nav bar BTN
+// smooth scroll for nav bar BTN with safe guards for responsive layouts
+const bindScroll = (btnId, targetId) => {
+    const btn = document.getElementById(btnId);
+    const target = document.getElementById(targetId);
+    if (btn && target) {
+        btn.addEventListener("click", function () {
+            target.scrollIntoView({ behavior: "smooth" });
+        });
+    }
+};
 
-// for faq btn
-document.getElementById("faqBtn").addEventListener("click", function () {
-    document.getElementById("faqSection").scrollIntoView({ behavior: "smooth" });
-});
-
-// for learn btn
-document.getElementById("learnBtn").addEventListener("click", function () {
-    document.getElementById("learnSection").scrollIntoView({ behavior: "smooth" });
-});
+bindScroll("faqBtn", "faqSection");
+bindScroll("learnBtn", "learnSection");
+bindScroll("learningPathBtn", "learningPath");
+bindScroll("practiceBtn", "practiceHighlights");
+bindScroll("faqBtnMobile", "faqSection");
+bindScroll("learnBtnMobile", "learnSection");
+bindScroll("learningPathBtnMobile", "learningPath");
+bindScroll("practiceBtnMobile", "practiceHighlights");
 
 // show btn from api
 
