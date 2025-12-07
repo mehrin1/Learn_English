@@ -226,48 +226,156 @@
 
             <div class="collapse collapse-plus bg-[#F8F8F8] border border-base-300 mb-2 mt-10">
                 <input type="radio" name="my-accordion-3" checked="checked" />
-                <div class="collapse-title font-semibold">1. What is the difference between var, let and const?</div>
+                <div class="collapse-title font-semibold">1. How do I start learning here?</div>
                 <div class="collapse-content text-sm">
-                    => var: Function-scoped, hoisted (initialized as undefined), can be redeclared/reassigned. <br>
-                    => let: Block-scoped, hoisted (but not initialized), can be reassigned, preferred for mutable variables. <br>
-                    => const: Block-scoped, hoisted (but not initialized), cannot be reassigned, but objects/arrays can be mutated.
+                    Tap Get Started, enter your name and the default password, then the Learn section unlocks with lesson buttons and vocabulary cards.
                 </div>
             </div>
             <div class="collapse collapse-plus bg-[#F8F8F8] border border-base-300 mb-2">
                 <input type="radio" name="my-accordion-3" />
-                <div class="collapse-title font-semibold">2. What is the difference between map(), forEach(), and filter()?</div>
+                <div class="collapse-title font-semibold">2. What is inside each lesson?</div>
                 <div class="collapse-content text-sm">
-                    => map(): Returns a new array by applying a function to each element (used for transformation). <br>
-                    => forEach(): Iterates over elements without returning a new array (used for side effects like logging). <br>
-                    => filter(): Returns a new array with elements that pass a condition (used for filtering items).
+                    Each lesson shows a set of words with meaning, pronunciation, and quick info buttons. You can open a modal for examples and synonyms.
                 </div>
             </div>
             <div class="collapse collapse-plus bg-[#F8F8F8] border border-base-300 mb-2">
                 <input type="radio" name="my-accordion-3" />
-                <div class="collapse-title font-semibold">3. What are arrow functions, and how are they different from regular function?</div>
+                <div class="collapse-title font-semibold">3. How do I pick a lesson level?</div>
                 <div class="collapse-content text-sm">
-                    => Arrow functions (=>) are a shorter way to write functions in JavaScript. <br>
-                    => They don't have their own this, instead, they inherit this from their surrounding scope (lexical this). <br>
-                    => Cannot be used as constructors and don't have arguments object like regular functions.
+                    Use the lesson buttons (Lesson-1, Lesson-2, etc.). They fetch the level data from the API and load the words for that level.
                 </div>
             </div>
             <div class="collapse collapse-plus bg-[#F8F8F8] border border-base-300 mb-2">
                 <input type="radio" name="my-accordion-3" />
-                <div class="collapse-title font-semibold">4. How do JavaScript Promises work?</div>
+                <div class="collapse-title font-semibold">4. Can I hear pronunciations?</div>
                 <div class="collapse-content text-sm">
-                    A Promise is an object representing the eventual completion or failure of an asynchronous operation.
-                    It allows you to write async code in a more synchronous fashion by providing a then() method.
+                    The volume icon on each card is reserved for listening practice. If audio is available, it will be connected there in future updates.
                 </div>
             </div>
             <div class="collapse collapse-plus bg-[#F8F8F8] border border-base-300 mb-2">
                 <input type="radio" name="my-accordion-3" />
-                <div class="collapse-title font-semibold">5. How does closure work in JavaScript?</div>
+                <div class="collapse-title font-semibold">5. Why do I sometimes see blank meanings?</div>
                 <div class="collapse-content text-sm">
-                    A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (lexical environment).
-                    In other words, a closure gives you access to an outer function's scope from an inner function.
+                    Some API items may not include a meaning. When that happens, a placeholder message appears so you know the data is missing, not your connection.
                 </div>
             </div>
 
+        </section>
+
+        <!-- learning path section -->
+        <section id="learningPath" class="md:px-16 px-4 mt-20">
+            <div class="flex justify-center items-center">
+                <h1 class="md:text-3xl text-2xl font-bold text-center md:text-left">
+                    <span class="text-[#12AFFE]">Build</span> Your Learning Path
+                </h1>
+            </div>
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 mt-10">
+                <div class="card bg-[#F8F8F8] shadow-sm p-6">
+                    <div class="card-body">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-user-check text-2xl text-[#422AD5]"></i>
+                            <h3 class="text-xl font-semibold">Start With Assessment</h3>
+                        </div>
+                        <p class="text-sm mt-3">Set a baseline by checking your current vocabulary comfort level, so each lesson feels just right.</p>
+                    </div>
+                </div>
+                <div class="card bg-[#F8F8F8] shadow-sm p-6">
+                    <div class="card-body">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-lightbulb text-2xl text-[#12AFFE]"></i>
+                            <h3 class="text-xl font-semibold">Practice With Focus</h3>
+                        </div>
+                        <p class="text-sm mt-3">Use curated lesson packs and quick drills to reinforce pronunciation, meaning, and context.</p>
+                    </div>
+                </div>
+                <div class="card bg-[#F8F8F8] shadow-sm p-6">
+                    <div class="card-body">
+                        <div class="flex items-center gap-3">
+                            <i class="fa-solid fa-chart-line text-2xl text-[#422AD5]"></i>
+                            <h3 class="text-xl font-semibold">Track Your Wins</h3>
+                        </div>
+                        <p class="text-sm mt-3">Keep an eye on streaks, completed lessons, and favorite words to stay motivated every day.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- practice highlights section -->
+        <section id="practiceHighlights" class="md:px-16 px-4 mt-20">
+            <div class="flex justify-center items-center">
+                <h1 class="md:text-3xl text-2xl font-bold text-center md:text-left">
+                    <span class="text-[#12AFFE]">Practice</span> Highlights
+                </h1>
+            </div>
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 mt-10">
+                <div class="stat bg-[#F8F8F8] shadow-sm rounded-lg">
+                    <div class="stat-figure text-secondary">
+                        <i class="fa-solid fa-headphones-simple text-2xl"></i>
+                    </div>
+                    <div class="stat-title text-gray-500">Listening Drills</div>
+                    <div class="stat-value text-[#422AD5]">15+</div>
+                    <div class="stat-desc">Daily pronunciation boosts</div>
+                </div>
+                <div class="stat bg-[#F8F8F8] shadow-sm rounded-lg">
+                    <div class="stat-figure text-secondary">
+                        <i class="fa-solid fa-pen-to-square text-2xl"></i>
+                    </div>
+                    <div class="stat-title text-gray-500">Writing Prompts</div>
+                    <div class="stat-value text-[#422AD5]">25</div>
+                    <div class="stat-desc">Context-first practice cards</div>
+                </div>
+                <div class="stat bg-[#F8F8F8] shadow-sm rounded-lg">
+                    <div class="stat-figure text-secondary">
+                        <i class="fa-solid fa-stopwatch text-2xl"></i>
+                    </div>
+                    <div class="stat-title text-gray-500">Mini Quizzes</div>
+                    <div class="stat-value text-[#422AD5]">5 min</div>
+                    <div class="stat-desc">Quick checks after lessons</div>
+                </div>
+                <div class="stat bg-[#F8F8F8] shadow-sm rounded-lg">
+                    <div class="stat-figure text-secondary">
+                        <i class="fa-solid fa-star text-2xl"></i>
+                    </div>
+                    <div class="stat-title text-gray-500">Favorites</div>
+                    <div class="stat-value text-[#422AD5]">50+</div>
+                    <div class="stat-desc">Save words to revisit anytime</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- subscription section -->
+        <section id="subscription" class="md:px-16 px-4 mt-20">
+            <div class="bg-[#F8F8F8] rounded-lg shadow-sm p-8 md:p-12">
+                <div class="grid md:grid-cols-2 grid-cols-1 gap-8 items-center">
+                    <div>
+                        <h2 class="md:text-3xl text-2xl font-bold">
+                            <span class="text-[#12AFFE]">Stay</span> in the Loop
+                        </h2>
+                        <p class="text-sm md:text-base mt-4 text-gray-700">
+                            Get lesson drops, study tips, and practice reminders directly to your inbox. Join the community and never miss a new release.
+                        </p>
+                        <ul class="list-disc list-inside text-sm text-gray-700 mt-4 space-y-1">
+                            <li>Weekly curated vocabulary packs</li>
+                            <li>Audio drills and pronunciation tips</li>
+                            <li>Early access to interactive challenges</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <form class="flex flex-col gap-3">
+                            <input type="text" class="input input-bordered w-full" placeholder="Enter your name">
+                            <input type="email" class="input input-bordered w-full" placeholder="Email address">
+                            <select class="select select-bordered w-full">
+                                <option disabled selected>Select preferred level</option>
+                                <option>Beginner</option>
+                                <option>Intermediate</option>
+                                <option>Advanced</option>
+                            </select>
+                            <button class="btn bg-[#422AD5] text-white border-none hover:bg-[#3a21c5]">Subscribe</button>
+                            <p class="text-xs text-gray-500">No spam. Unsubscribe anytime.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>
